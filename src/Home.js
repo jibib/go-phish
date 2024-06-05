@@ -9,7 +9,7 @@ export default function Home() {
     const navigate = useNavigate()
 
     const goToPage=()=>{
-        navigate("/test");
+        navigate("/home");
     }
     return (
         <div>
@@ -34,7 +34,7 @@ export default function Home() {
                             <CardContent>
                                 <TextField style={{marginBottom:"10px"}} id="username" label="GT Account"></TextField>
                                 <br></br>
-                                <TextField style={{marginBottom:"10px"}} id="password" label="Password"></TextField>
+                                <TextField style={{marginBottom:"10px"}} id="password" label="Password" type="password"></TextField>
                                 <Button onClick={() => goToPage()}>Submit</Button>
                             </CardContent>
                         </Card>

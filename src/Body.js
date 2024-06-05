@@ -1,8 +1,18 @@
 import * as React from 'react';
 import './Body.css';
-import { Container,Box,Typography, TextField,Grid,Button,Card, CardContent } from '@mui/material';
+import { Container,Box,Typography, TextField,Grid,Button,Card, CardContent,Dialog,DialogTitle,DialogContent,DialogContentText,DialogActions } from '@mui/material';
 
 export default function Body() {
+    const [open, setOpen] = React.useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
     return (
        <Container className='page-content'>
         <Box>
@@ -54,7 +64,24 @@ export default function Body() {
                         </Grid>
                     </Grid>
                     <br></br>
-                    <Button variant="contained">Submit</Button>
+                    <Button variant="contained" onClick={handleClickOpen}>Submit</Button>
+
+                    <Dialog
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="alert-dialog-title"
+                    aria-describedby="alert-dialog-description">
+                        <DialogTitle id="alert-dialog-title">{"Address has been updated."}</DialogTitle>
+                        <DialogContent>
+                            <DialogContentText id="alert-dialog-description">
+                                Please wait for follow-up email to confirm that email has been updated.
+                            </DialogContentText>
+                        </DialogContent>
+                        <DialogActions>
+                            <Button onClick={handleClose} autofocus>Close</Button>
+                        </DialogActions>
+                    </Dialog>
+
                 </CardContent>
             </Card>
         </Box>
