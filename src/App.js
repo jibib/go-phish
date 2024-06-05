@@ -1,23 +1,20 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Bar from './Bar.js';
-import Body from './Body.js';
-import Footer from './Footer.js';
-
+import Home from './Home.js';
+import NewBody from './NewBody.js';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header>
-        <Bar></Bar>
-      </header>
-      <div style={{ minHeight:"100vh",}}>
-        <Body></Body>
-      </div>
-      <footer>
-        <Footer/>
-      </footer>
-      
+      <Bar/>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/test" element={<NewBody/>} />
+      </Routes>
     </div>
+    </Router>
   );
 }
 

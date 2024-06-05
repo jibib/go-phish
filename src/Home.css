@@ -1,0 +1,30 @@
+.sticky-image-wrapper{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.sticky-image-wrapper img{
+    height: 80%;
+    display: table;
+    position: relative;
+    margin: auto;
+    width:100%;
+}
+
+.usercard {
+    background-color: #b3a369;
+}
+
+:root {
+    --gt-black: #262626;
+    --gt-white: #fff;
+    --gt-gold: #b3a369;
+    --gt-md-gold: #a4925a;
+    --gt-drk-gold: #857437;
+    --gt-navy: #003057;
+    --gt-light-gray: #ccc;
+    --gt-light-grey: #ccc;
+    --gt-lightest-gray: #eee;
+    --gt-md-grey: #545454;
+  }
