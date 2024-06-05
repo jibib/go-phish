@@ -1,0 +1,45 @@
+.boxstyle {
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+}
+
+.page-content {
+    background: white;
+    padding: 25px 10px;
+    margin-top: 1px;
+}
+
+.title-color {
+    color: var(--gt-gold);
+}
+
+.pgraph {
+    color: var(--gt-gold);
+}
+
+.form {
+    margin-left: 8%;
+    margin-top: 20px;
+}
+
+.footer {
+    padding: 5% 2.5%;
+    background-color: var(--gt-black);
+    bottom: 0;
+    width: 100%;
+}
+
+:root {
+  --gt-black: #262626;
+  --gt-white: #fff;
+  --gt-gold: #b3a369;
+  --gt-md-gold: #a4925a;
+  --gt-drk-gold: #857437;
+  --gt-navy: #003057;
+  --gt-light-gray: #ccc;
+  --gt-light-grey: #ccc;
+  --gt-lightest-gray: #eee;
+  --gt-md-grey: #545454;
+}

@@ -1,0 +1,35 @@
+.navbar {
+  background: linear-gradient(to right, var(--gt-md-gold) 0%, var(--gt-gold) 100%);
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x)* .5);
+  padding-left: calc(var(--bs-gutter-x)* .5);
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+.gt-logo {
+  
+  : url("/images/head-img.jpg");
+  background-size: cover;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+
+:root {
+  --gt-black: #262626;
+  --gt-white: #fff;
+  --gt-gold: #b3a369;
+  --gt-md-gold: #a4925a;
+  --gt-drk-gold: #857437;
+  --gt-navy: #003057;
+  --gt-light-gray: #ccc;
+  --gt-light-grey: #ccc;
+  --gt-lightest-gray: #eee;
+  --gt-md-grey: #545454;
+}

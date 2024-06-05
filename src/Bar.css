@@ -1,0 +1,32 @@
+.navbar {
+  background: linear-gradient(to right, var(--gt-md-gold) 0%, var(--gt-gold) 100%);
+}
+
+.navbar2 {
+    padding: 20px 10px;
+    margin-top: 55px;
+    margin-left: 10%;
+}
+
+.title-color {
+    color: var(--gt-gold);
+}
+
+.gt-logo {
+    height: 15%;
+    width: auto;
+    max-width: 20%;
+}
+
+:root {
+  --gt-black: #262626;
+  --gt-white: #fff;
+  --gt-gold: #b3a369;
+  --gt-md-gold: #a4925a;
+  --gt-drk-gold: #857437;
+  --gt-navy: #003057;
+  --gt-light-gray: #ccc;
+  --gt-light-grey: #ccc;
+  --gt-lightest-gray: #eee;
+  --gt-md-grey: #545454;
+}
