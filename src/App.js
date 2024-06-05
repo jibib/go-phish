@@ -11,7 +11,7 @@ function App() {
       <Bar/>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/test" element={<NewBody/>} />
+        <Route path="/home" element={<NewBody/>} />
       </Routes>
     </div>
     </Router>
